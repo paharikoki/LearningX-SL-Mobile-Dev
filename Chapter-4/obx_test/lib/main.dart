@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'package:obx_test/screens/fortest/bottomsheets.dart';
-import 'package:obx_test/screens/fortest/dialog.dart';
-import 'package:obx_test/screens/fortest/snack_bar.dart';
-import 'package:obx_test/screens/home_screen.dart';
-import 'package:obx_test/screens/login_screen.dart';
-import 'package:obx_test/screens/register_screen.dart';
+import 'package:obx_test/app/routes/app_pages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,16 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: const LoginScreen(),
-      initialRoute: '/home',
-      getPages: [
-        GetPage(name: '/login', page: () => const LoginScreen()),
-        GetPage(name: '/home', page: () => const HomeScreen()),
-        GetPage(name: '/register', page: () => const RegisterScreen()),
-        GetPage(name: '/snack', page: () => const SnackBarPage()),
-        GetPage(name: '/dialog', page: () => const DialogPage()),
-        GetPage(name: '/bottom', page: () => const BottomSheetsPage()),
-      ],
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
       theme: _buildTheme(Brightness.dark),
     );
   }
