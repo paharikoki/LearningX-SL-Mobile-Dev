@@ -20,6 +20,9 @@ class HomeView extends GetView<HomeController> {
           height: 90,
         ),
         ElevatedButton(
+            onPressed: () => Get.toNamed('/category'),
+            child: const Text('category')),
+        ElevatedButton(
             onPressed: () => Get.offAllNamed('/login'),
             child: const Text('Logout'))
       ],
