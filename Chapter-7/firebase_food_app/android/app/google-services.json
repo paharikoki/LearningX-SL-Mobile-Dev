@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "47741691658",
+    "project_id": "msib-recipe-app",
+    "storage_bucket": "msib-recipe-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47741691658:android:4867099f1ff93f3fddbcf3",
+        "android_client_info": {
+          "package_name": "com.example.firebase_food_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ4Kc8Vy9mbBXDZ5rBYJxIMeU2FGK10GM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47741691658:android:337cdbf382bac6bfddbcf3",
+        "android_client_info": {
+          "package_name": "com.example.recipe_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ4Kc8Vy9mbBXDZ5rBYJxIMeU2FGK10GM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
